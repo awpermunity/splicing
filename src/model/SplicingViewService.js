@@ -18,10 +18,18 @@ class SplicingViewService {
   cards;
   ports;
 
+  constructor() {
+    this.model = {
+      locations: [],
+    };
+  }
+
 
   calculateModel(display) {
 
     console.log('[SplicingViewService] display: ', display);
+
+    // this.model = data;
 
     this.locations = [];
     this.devices = [];
@@ -30,7 +38,10 @@ class SplicingViewService {
     this.portConnectors = [];
     this.texts = [];
 
-    this.model.locations.forEach(location => {
+    const locationsIds = Object.keys(this.model.locations);
+
+    locationsIds.forEach(id => {
+      const location = this.model.locations[id];
       location.calculate(display);
 
       if (display.displayLocations) {
@@ -87,47 +98,58 @@ class SplicingViewService {
   }
 
 
-  getDeviceJSON() {
-    let device
-    $.get({
-      url: `http://localhost:3000/devices/15708581073050566`,
-      async: false,
-      dataType: 'json',
-      method: 'GET',
-      cache: false,
-      success: function (data) {
-        device = data;
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.error(this.url, status, err.toString());
-      }.bind(this)
-    });
-    return device
+  getDeviceJSON(id) {
+    // let device
+    return $.get(`http://localhost:3000/devices/${id}`);
+    // return device
   }
-  getDataJSON = this.getDeviceJSON()
+  
+  addDevice(device) {
+    const foundLocationIndex = this.model.locations
+      .findIndex(location => location.locationData.identifier === device.location.id);
 
-  fetchModel() {
-    this.model = {
-      locations: this.generateFakeLocations(1) // todo GB zeby sie obwodka nie nakladala
-    };
+    if (foundLocationIndex < 0) {
+      const newLocation = new Location({
+        name: "Location " + device.location.id,
+        address: "Address " + device.location.addressId,
+        identifier: device.location.id
+      }, this.generateDevices([device]));
+
+      this.model.locations.push(newLocation);
+    }
+    else {
+      const newDevicesArr = [...this.model.locations[foundLocationIndex].devices, device];
+      this.model.locations[foundLocationIndex] = new Location({
+        name: "Location " + device.location.id,
+        address: "Address " + device.location.addressId,
+        identifier: device.location.id
+      }, this.generateDevices(newDevicesArr));
+    }
+
+    console.info ( ' LOCATIONS! ');
+    console.log(this.model.locations)
   }
 
-  generateFakeLocations(count) {
-    return Array.from(Array(count).keys()).map(x => this.generateFakeLocation(x))
+  fetchModel(id) {
+    // this.model = {
+    //   locations: this.generateFakeLocations(1) // todo GB zeby sie obwodka nie nakladala
+    // };
+    return this.getDeviceJSON(id);
   }
 
-  generateFakeLocation(index) {
-    let devices = []
-    devices.push(this.getDataJSON)
+  generateFakeLocations(data, count) {
+    return Array.from(Array(count).keys()).map(i => this.generateFakeLocation(data, i));
+  }
+
+  generateFakeLocation(data, index) {
     return new Location({
       name: "Location " + index,
       address: "Address " + index,
       identifier: "Identifier " + index
-    }, this.generateDevices(devices))
+    }, this.generateDevices([data]))
   }
 
-  generateDevices(devicesJSON) {
-    let devices = devicesJSON
+  generateDevices(devices) {
     return devices.map(x => this.generateDevice(devices.indexOf(x), devices))
   }
 

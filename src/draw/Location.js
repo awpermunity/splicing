@@ -38,11 +38,12 @@ class Location extends React.Component {
                 />}
                 {
                     this.state.location.draw.borderPoints.allPoints
-                        .map(point =>
+                        .map((point, index) =>
                             <Circle
                                 x={point[0]}
                                 y={point[1]}
                                 radius={3}
+                                key={index}
                                 stroke={'red'}
                                 fill={'red'}
                             />

@@ -28,12 +28,26 @@ class SplicingView extends React.Component {
     console.log('[SplicingView] constructor');
 
     this.splicingViewService = new SplicingViewService();
-    this.splicingViewService.fetchModel();
-    this.splicingViewService.calculateModel(SplicingView.DEFAULT_DISPLAY);
+    this.getDevice(15708581073050566);
 
     this.state = SplicingView.DEFAULT_DISPLAY;
     this.handleChange = this.handleChange.bind(this);
 
+  }
+
+  getDevice(id) {
+    this.splicingViewService.fetchModel(id).done((device) => {
+      console.log(device.location.id)
+
+      // this.splicingViewService
+      //   .generateFakeLocations(device, 10)
+      //   .forEach(d => this.splicingViewService.addDevice(d));
+
+        this.splicingViewService.addDevice(device)
+      
+      this.splicingViewService.calculateModel(SplicingView.DEFAULT_DISPLAY)
+      this.forceUpdate();
+    })
   }
 
   handleChange(event) {
@@ -110,15 +124,16 @@ class SplicingView extends React.Component {
           </label>
         </form>
         <Stage width={width} height={height}>
-          <Layer>
+          {this.splicingViewService.locations && (
+            <Layer>
             {this.splicingViewService.locations.map((location, index) =>
               <Location key={index} location={location} />
             )}
             {this.splicingViewService.devices.map((device, index) =>
               <Device key={index} device={device} />
             )}
-            {this.splicingViewService.cards.map(card =>
-              <Card card={card} />
+            {this.splicingViewService.cards.map((card, index) =>
+              <Card card={card} key={index} />
             )}
             {this.splicingViewService.ports.map((port, index) =>
               <Port key={index} port={port} />
@@ -130,11 +145,13 @@ class SplicingView extends React.Component {
               <Text
                 x={text.x}
                 y={text.y}
+                key={index}
                 text={text.text}
                 fontSize={SplicingView.TEXT_HEIGHT}
               />
             )}
           </Layer>
+          )}
         </Stage>
       </div>
     );

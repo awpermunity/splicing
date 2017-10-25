@@ -552,6 +552,559 @@
                 }
             ],
             "ports": []
+        },
+        {
+            "id": 15708581073050567,
+            "type": "IPDevice",
+            "name": " 10-rt-311",
+            "identifier": null,
+            "modelIdentifier": null,
+            "location": {
+                "id": 44085936,
+                "identifier": " 10",
+                "name": " 10",
+                "type": "Building",
+                "addressId": null,
+                "coordinateX": null,
+                "coordinateY": null
+            },
+            "cards": [
+                {
+                    "id": 15708711244434391,
+                    "type": "Card",
+                    "name": "OSSPHY-24080_cardModel",
+                    "identifier": null,
+                    "modelIdentifier": null,
+                    "cards": [],
+                    "ports": [
+                        {
+                            "id": 15708762535845331,
+                            "type": "Port",
+                            "name": "9",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708760204417561,
+                            "type": "Port",
+                            "name": "8",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708757872989791,
+                            "type": "Port",
+                            "name": "7",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708755541562021,
+                            "type": "Port",
+                            "name": "6",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708753210134251,
+                            "type": "Port",
+                            "name": "5",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708750878706481,
+                            "type": "Port",
+                            "name": "4",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708748547278711,
+                            "type": "Port",
+                            "name": "3",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708718238717701,
+                            "type": "Port",
+                            "name": "24",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708715907289931,
+                            "type": "Port",
+                            "name": "23",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708713575862161,
+                            "type": "Port",
+                            "name": "22",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708767198700871,
+                            "type": "Port",
+                            "name": "21",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708764867273101,
+                            "type": "Port",
+                            "name": "20",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708746215850941,
+                            "type": "Port",
+                            "name": "2",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708741552995401,
+                            "type": "Port",
+                            "name": "19",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708739221567631,
+                            "type": "Port",
+                            "name": "18",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708736890139861,
+                            "type": "Port",
+                            "name": "17",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708734558712091,
+                            "type": "Port",
+                            "name": "16",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708732227284321,
+                            "type": "Port",
+                            "name": "15",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708729895856551,
+                            "type": "Port",
+                            "name": "14",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708727564428781,
+                            "type": "Port",
+                            "name": "13",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708725233001011,
+                            "type": "Port",
+                            "name": "12",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708722901573241,
+                            "type": "Port",
+                            "name": "11",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708720570145471,
+                            "type": "Port",
+                            "name": "10",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708743884423171,
+                            "type": "Port",
+                            "name": "1",
+                            "isSplice": false,
+                            "connectors": []
+                        }
+                    ]
+                },
+                {
+                    "id": 15708589621619056,
+                    "type": "Card",
+                    "name": "OSSPHY-24080_cardModel",
+                    "identifier": null,
+                    "modelIdentifier": null,
+                    "cards": [],
+                    "ports": [
+                        {
+                            "id": 15708640913029996,
+                            "type": "Port",
+                            "name": "9",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708638581602226,
+                            "type": "Port",
+                            "name": "8",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708636250174456,
+                            "type": "Port",
+                            "name": "7",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708633918746686,
+                            "type": "Port",
+                            "name": "6",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708631587318916,
+                            "type": "Port",
+                            "name": "5",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708629255891146,
+                            "type": "Port",
+                            "name": "4",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708626924463376,
+                            "type": "Port",
+                            "name": "3",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708596615902366,
+                            "type": "Port",
+                            "name": "24",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708594284474596,
+                            "type": "Port",
+                            "name": "23",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708591953046826,
+                            "type": "Port",
+                            "name": "22",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708645575885536,
+                            "type": "Port",
+                            "name": "21",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708643244457766,
+                            "type": "Port",
+                            "name": "20",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708624593035606,
+                            "type": "Port",
+                            "name": "2",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708619930180066,
+                            "type": "Port",
+                            "name": "19",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708617598752296,
+                            "type": "Port",
+                            "name": "18",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708615267324526,
+                            "type": "Port",
+                            "name": "17",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708612935896756,
+                            "type": "Port",
+                            "name": "16",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708610604468986,
+                            "type": "Port",
+                            "name": "15",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708608273041216,
+                            "type": "Port",
+                            "name": "14",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708605941613446,
+                            "type": "Port",
+                            "name": "13",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708603610185676,
+                            "type": "Port",
+                            "name": "12",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708601278757906,
+                            "type": "Port",
+                            "name": "11",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708598947330136,
+                            "type": "Port",
+                            "name": "10",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708622261607836,
+                            "type": "Port",
+                            "name": "1",
+                            "isSplice": false,
+                            "connectors": []
+                        }
+                    ]
+                },
+                {
+                    "id": 15708650238741076,
+                    "type": "Card",
+                    "name": "OSSPHY-24080_cardModel",
+                    "identifier": null,
+                    "modelIdentifier": null,
+                    "cards": [],
+                    "ports": [
+                        {
+                            "id": 15708701918723311,
+                            "type": "Port",
+                            "name": "9",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708699587295541,
+                            "type": "Port",
+                            "name": "8",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708697255867771,
+                            "type": "Port",
+                            "name": "7",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708694924440001,
+                            "type": "Port",
+                            "name": "6",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708692593012231,
+                            "type": "Port",
+                            "name": "5",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708690261584461,
+                            "type": "Port",
+                            "name": "4",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708687930156691,
+                            "type": "Port",
+                            "name": "3",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708657233024386,
+                            "type": "Port",
+                            "name": "24",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708654901596616,
+                            "type": "Port",
+                            "name": "23",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708652570168846,
+                            "type": "Port",
+                            "name": "22",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708706581578851,
+                            "type": "Port",
+                            "name": "21",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708704250151081,
+                            "type": "Port",
+                            "name": "20",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708685210157626,
+                            "type": "Port",
+                            "name": "2",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708680547302086,
+                            "type": "Port",
+                            "name": "19",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708678215874316,
+                            "type": "Port",
+                            "name": "18",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708675884446546,
+                            "type": "Port",
+                            "name": "17",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708673553018776,
+                            "type": "Port",
+                            "name": "16",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708671221591006,
+                            "type": "Port",
+                            "name": "15",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708668890163236,
+                            "type": "Port",
+                            "name": "14",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708666558735466,
+                            "type": "Port",
+                            "name": "13",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708664227307696,
+                            "type": "Port",
+                            "name": "12",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708661895879926,
+                            "type": "Port",
+                            "name": "11",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708659564452156,
+                            "type": "Port",
+                            "name": "10",
+                            "isSplice": false,
+                            "connectors": []
+                        },
+                        {
+                            "id": 15708682878729856,
+                            "type": "Port",
+                            "name": "1",
+                            "isSplice": false,
+                            "connectors": []
+                        }
+                    ]
+                }
+            ],
+            "ports": []
         }
     ]
 }
